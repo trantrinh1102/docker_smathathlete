@@ -1,0 +1,12 @@
+# config/database.yml
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: 123123
+  host: db
+
+development:
+  <<: *default
+  database: myapp_development
